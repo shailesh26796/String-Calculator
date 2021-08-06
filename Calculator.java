@@ -16,3 +16,7 @@ public class Calculator {
 			return sum(numList);
 		}
 	}
+	private static int toInt(String number){
+		return Integer.parseInt(number);
+	}
+
