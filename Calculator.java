@@ -6,3 +6,9 @@ public class Calculator {
 		if(text.equals("")){
 			return 0;
 		}
+		else{
+			String delimiter = ",";
+			if(text.matches("//(.*)\n(.*)")){
+				delimiter = Character.toString(text.charAt(2));
+				text = text.substring(4);
+			}
